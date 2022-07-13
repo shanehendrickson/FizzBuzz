@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>App Name: A Coding Project by Shane Hendrickson</title>
+    <title>FIZZBUZZ: A Coding Project by Shane Hendrickson</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,7 +14,7 @@
     <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="css/site.css">
-    <link rel="icon" type="image/png" href="img/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="img/favicon.ico">
 
 </head>
 
@@ -23,7 +23,7 @@
 <!-- ==== Nav Section ==== -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top">
       <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="img/SH_white.svg" class="d-inline-block align-text-bottom" width="30" height="24" alt="Shane Hendrickson Logo"> APP NAME</a>
+          <a class="navbar-brand" href="index.html"><img src="img/SH_white.svg" class="d-inline-block align-text-bottom" width="30" height="24" alt="Shane Hendrickson Logo"> FIZZBUZZ</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
               aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -51,8 +51,40 @@
   </nav>
   <!-- ==== Main Section ==== -->
   <main class="flex-shrink-0">
-    <div class="container">
+    <div class="container mt-5">
+      <div class="row row-cols-1 row-cols-lg-2">
+        <div class="col-lg-4 border-end border-2">
+          <h1>FIZZBUZZ: A Coding Project</h1>
+          <h4 class="lead">When it counts you Fizz Buzz. A javascript coding exercise using loops. Write a program that prints the numbers from 1 to 100 and for multiples of '3' display "Fizz" instead of the number and for multiples of '5' display "Buzz". If a multiple of both display "FizzBuzz".</h4>
+          <h2 class="mt-5">Instructions</h2>
+          <p>Enter a fizz and a buzz value. Press the button and the values will appear.</p>          
+        </div>
+        <div class="col-lg-8">
+          <div>
+            <h5>Enter Values</h5>
+            <form class="row gy2 gx-3">
+              <div class="col">
+                <input id="fizzValue" class="form-control" type="number" value=3 placeholder="3" aria-label="Fizz Value">
+              </div>
+              <div class="col">
+                <input id="buzzValue" class="form-control" type="number" value=5 placeholder="5" aria-label="Buzz Value">
+              </div>
+              <div class="col-12 mt-2 d-flex justify-content-end">
+                <button id="btnSubmit" class="btn-lg btn-dark" type="button">Buzz It</button>
+              </div>
+            </form>
+            <h2 class="mt-5 border-bottom border-2">Results</h2>
+            <div class="table-responsive">
+              <table class="table table-sm table-striped">
+                <tbody class="results">
+                  <!-- Results Go Here -->
+                </tbody>
+              </table>
+            </div>
+          </div>
 
+        </div>
+      </div>
     </div>
   </main>
   <!-- ==== Footer Section ==== -->
